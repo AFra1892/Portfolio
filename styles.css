@@ -93,3 +93,35 @@ body{
     gap: 20px;
     margin-left: 40px;
 }
+.portfolio__about{
+    display: flex;
+    flex-direction: row;
+    padding: 8rem 17rem;
+    gap: 100px;
+}
+.portfolio__about-image img{
+    height: 350px;
+    width: 400px;
+    border-radius: 12px;
+}
+.portfolio__about-content h3{
+    margin-top: 0;
+    color: blue;
+}
+.portfolio__contact{
+    background-color: #f9f9f9;
+    padding: 8rem 17rem;
+}
+.portfolio__contact p{
+    margin-top: 0;
+    color: blue;
+    font-weight: bold;
+}
+.portfolio__contact h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+.portfolio__footer{
+    background-color: #2d2e32;
+    padding: 4rem 17rem;
+}

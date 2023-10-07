@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="styles.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header id="home" class="portfolio__header">
@@ -26,7 +27,10 @@
                 <div class="portfolio__header-content_intro-text">
                     <h1>Front-End React Developer</h1>
                     <p>Hi, I'm Elliot. A passionate Front-end React Developer based in Tehran, Iran. 📍</p>
-                    <p>Git Hun Icon </p>
+                    <div class="portfolio__header-content_intro-text_icons">
+                        <a  class='bx bxl-github  bx-md'></a>
+                        <a  class='bx bxl-linkedin-square  bx-md'></a>
+                    </div>
                 </div>
                 <div class="portfolio__header-content_intro-image"></div>
             </div>
@@ -57,12 +61,21 @@
     <div class="portfolio__contact" id="contact">
         <p>Contact Me</p>
         <h3>Don't Be Shy Hit me up!</h3>
-        <p>main icon</p>
+        <div class="portfolio__contact-email">
+            <i class='bx bx-envelope bx-md' ></i>
+            <div class="portfolio__contact-email_text">
+                <p>Mail</p>
+                <p class="portfolio__contact-email_text-address">mashhadifarahani1@gmail.com</p>
+            </div>        
+        </div>
 
     </div>
     <footer class="portfolio__footer">
         <div class="portfolio__footer-text">Copyright © 2023. All rights are reserved</div>
-        <div class="portfolio__footer-icons"></div>
+        
     </footer>
+    
+
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

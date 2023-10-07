@@ -1,5 +1,7 @@
 body{
     font-family: Poppins,sans-serif;
+    padding: 0;
+    margin: 0;
 }
 .portfolio__header{
     background-color: #f9f9f9;
@@ -120,8 +122,22 @@ body{
 .portfolio__contact h3{
     font-size: 26px;
     font-weight: bold;
+    margin-bottom: 70px;
+}
+.portfolio__contact-email{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.portfolio__contact-email p{
+    color: black;
+}
+.portfolio__contact-email_text-address{
+    color: #555;
 }
 .portfolio__footer{
     background-color: #2d2e32;
     padding: 4rem 17rem;
+    color: #fff;
 }

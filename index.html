@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script
+			src="https://kit.fontawesome.com/81c2c05f29.js"
+			crossorigin="anonymous"
+		></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header id="home" class="portfolio__header">
-        <nav class="portfolio__header-navbar">
+        <div class="container">
+            <div class="wrapper flexitem">
+                <div class="left flexitem">
+                    <div class="logo"><h3>Elliot.dev</h3></div>
+                    <nav>
+                        <ul class="main-links nav-menu">
+                            <li><a href="#" class="nav-links">Home</a></li>
+                            <li><a href="#" class="nav-links">About</a></li>
+                            <li><a href="#" class="nav-links">Project</a></li>
+                            <li><a href="#" class="nav-links">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- <nav class="portfolio__header-navbar">
             <div class="portfolio__header-navbar_logo">
                 <h3>Elliot.dev</h3>
             </div>
+            <div class=" menu-icon desktop-hide" >
+                <i class='bx bx-menu bx-md'></i>
+            </div>
+            <div class="portfolio__header-navbar_list-mobile desktop-hide">
+                <ul class="portfolio__header-navbar_list-items-mobile">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>   
             <div class="portfolio__header-navbar_list">
                 <ul class="portfolio__header-navbar_list-items">
                     <li><a href="#home">Home</a></li>
@@ -21,16 +61,8 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <a  class='bx bxl-github  bx-md'></a>
-            <div class="portfolio__header-navbar_list-mobile">
-                <ul class="portfolio__header-navbar_list-items-mobile">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+               
+        </nav> -->
         <div class="portfolio__header-content">
             <div class="portfolio__header-content_intro">
                 <div class="portfolio__header-content_intro-text">
@@ -92,5 +124,17 @@
     
 
  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-</body>
+ <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click",()=>{
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+    document.querySelectorAll(".nav-links").forEach(n=>n.addEventListener("click",()=>{
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }));
+   </script></body>
 </html>

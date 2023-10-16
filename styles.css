@@ -131,6 +131,54 @@ body{
     margin-top: 0;
     color: blue;
 }
+.portfolio__projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+.portfolio__projects-card{
+    display: flex;
+    border-radius: 12px;
+    background-color: #ffffff;
+    height: 200px;
+    width: 700px;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+
+
+}
+.portfolio__projects-card_image{
+    display: flex;
+    height: 250px;
+    width: 400px;
+    border-radius: 12px;
+    background-image: url("pizzahub.png");
+    background-size: cover;
+}
+.portfolio__projects-card_content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.portfolio__projects-card_content-language{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio__projects-card_content-language p{
+    background-color: #ffffff;
+    padding: .75rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+
+}
 .portfolio__contact{
     background-color: #f9f9f9;
     padding: 8rem 17rem;
@@ -284,15 +332,22 @@ header li>a{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    .nav-menu{
+    .container{
         position: fixed;
+    }
+    .nav-menu{
+        margin-top: 0;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         left: -110%;
         top: 70px;
-        gap: 0;
+        font-weight: bold;
+        font-size: 25px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        text-align: center;
         transition: 0.3s;
         z-index: 5;
     }

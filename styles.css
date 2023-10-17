@@ -141,8 +141,9 @@ body{
 }
 .portfolio__projects-card{
     display: flex;
+    flex-direction: row;
     border-radius: 12px;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     height: 200px;
     width: 700px;
     padding: 4rem;
@@ -395,6 +396,22 @@ header li>a{
       .portfolio__header-content_tech h4{
         margin: 0;
       }
+      .portfolio__projects-card{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 300px;
+      }
+      .portfolio__projects-card_image{
+        height: 60%;
+        width: 400px;
+        
+    }
+    .portfolio__projects-card_content{
+        height: 40%;
+        width: 400px;
+        
+    }
       .portfolio__about{
         display: flex;
         flex-direction: column;
